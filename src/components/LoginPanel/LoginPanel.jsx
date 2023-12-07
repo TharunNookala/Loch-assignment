@@ -33,7 +33,7 @@ const LoginPanel = () => {
           <span className={`text-start text-xs font-medium text-red-500 ${isCorrect ? "hidden" : ""}`}>
             Please enter a correct email address.
           </span>
-          <button type="submit" className='px-2 py-4 bg-black text-white text-sm w-full rounded-md'>Get started</button>
+          <button type="submit" className='px-2 py-4 bg-black text-white text-sm w-[90%] sm:w-full rounded-md'>Get started</button>
         </form>
         <p className='text-sm font-bold w-full text-center'>You'll receive an email with an invite link to join.</p>
       </div>
