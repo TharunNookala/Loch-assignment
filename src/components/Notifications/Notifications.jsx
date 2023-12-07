@@ -1,10 +1,28 @@
 import { FiBell, FiBarChart2 } from 'react-icons/fi';
 import { BsClock } from 'react-icons/bs';
+import { useEffect, useState } from 'react';
 
 const Notifications = () => {
+  const [isPaused, setIsPaused] = useState(false);
 
+  const handleMouseEnter = () => {
+    setIsPaused(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsPaused(false);
+  };
+
+  const handleInputChange = () => {
+    setIsPaused(true);
+  };
+
+  
   return (
-    <div className="divs-container overflow-hidden">
+    <div className={`divs-container overflow-hidden ${isPaused ? 'paused' : ''}`} 
+      onMouseEnter={handleMouseEnter} 
+      onMouseLeave={handleMouseLeave}
+    >
       <div className="divs-slide animate-marquee infinite flex space-x-4">
         <div className="bg-gray-100 rounded-md px-2 py-2 space-y-3 font-medium min-w-[200px] h-44">
           <div className="flex items-center justify-between">

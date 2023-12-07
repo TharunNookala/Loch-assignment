@@ -27,7 +27,7 @@ const LoginPanel = () => {
             type="email"
             value={email}
             placeholder='Your email address'
-            className='w-full p-3 rounded-md text-sm border'
+            className='w-[90%] sm:w-full p-3 rounded-md text-sm border'
             onChange={(e) => setEmail(e.target.value)}
           />
           <span className={`text-start text-xs font-medium text-red-500 ${isCorrect ? "hidden" : ""}`}>
