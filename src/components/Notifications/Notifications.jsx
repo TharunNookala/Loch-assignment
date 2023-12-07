@@ -30,7 +30,7 @@ const Notifications = () => {
             <button className="px-2">Save</button>
           </div>
           <p className="sm:max-w-[129px] text-sm">We'll be sending notifications to you here</p>
-          <input type="email"  className="px-2 py-2 rounded-md border text-sm"  />
+          <input type="email"  className="w-[90%] px-2 py-2 rounded-md border text-sm"  />
         </div>
 
         <div className="bg-gray-100 rounded-md px-2 py-2 space-y-3 font-medium min-w-[200px] h-44">
@@ -67,7 +67,7 @@ const Notifications = () => {
             <button className="px-2">Save</button>
           </div>
           <p className="sm:max-w-[129px] text-sm">We'll be sending notifications to you here</p>
-          <input type="email"  className="px-2 py-2 rounded-md border text-sm"  />
+          <input type="email"  className="w-[90%] px-2 py-2 rounded-md border text-sm"  />
         </div>
       </div>
     </div>
